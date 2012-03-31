@@ -43,7 +43,10 @@ function world(length, width, hud)
 	}
 
 	this.drawEntities = function(x, y)
-	{
+	{	
+			var entity_image = resources["TOMBSTONE"];
+	
+			context.drawImage(entity_image, x+60, y+60, (entity_image.width*this.zoom_scale), (entity_image.height*this.zoom_scale));
 	}
 
 	// Populate map
